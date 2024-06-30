@@ -34,3 +34,50 @@ divisor = 3  # Você pode alterar este valor para qualquer outro divisor desejad
 for numero in range(inicio, fim):
     if numero % divisor == 0:
         print(numero)
+        
+        
+#Atividade 4
+#Crie um código declarando as seguintes variáveis do tipo string e realize as transformações solicitadas.
+# Variáveis do tipo string
+nome = 'João da Silva'
+cidade = 'São Paulo'
+cpf = '123.456.789-00'
+
+# Transforme todos os caracteres das variáveis em maiúsculo
+print(nome.upper())
+print(cidade.upper())
+print(cpf.upper())
+
+# Transforme todos os caracteres das variáveis em minúsculo
+print(nome.lower())
+print(cidade.lower())
+print(cpf.lower())
+
+# Exiba a posição do caractere 'ã', se presente, em cada uma das variáveis
+print(nome.find('ã'))
+print(cidade.find('ã'))
+print(cpf.find('ã'))
+
+# Exiba o número de caracteres de cada variável
+print(len(nome))
+print(len(cidade))
+print(len(cpf))
+
+# Remova os pontos (.) e o hífen (–) da variável cpf
+cpf_limpo = cpf.replace('.', '').replace('-', '')
+print(cpf_limpo)
+
+
+#Atividade 5
+#Crie um código que realize o somatório de todos os caracteres da seguinte string:
+numero = '127957'
+
+# Inicializa a variável auxiliar soma
+soma = 0
+
+# Percorre cada caractere da string e soma os valores numéricos
+for caractere in numero:
+    soma += int(caractere)
+
+print(soma)
+
